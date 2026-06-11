@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e3a8a;
+  padding: 15px 30px;
+  color: white;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: 0.3s;
+}
+
+.navbar nav a:hover {
+  opacity: 0.7;
+}
+
+.logout {
+  color: #ffb4b4;
+}
+
+/* CONTAINER */
+.container {
+  padding: 30px;
+  background: #f3f4f6;
+  min-height: 100vh;
+}
+
+/* JANELA EM DESTAQUE */
+.window {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* DESTAQUE */
+.featured {
+  border-left: 6px solid #1e3a8a;
+  margin-bottom: 20px;
+}
+
+/* GRID DE JANELAS */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.window h3 {
+  margin-bottom: 10px;
+  color: #1e3a8a;
+}

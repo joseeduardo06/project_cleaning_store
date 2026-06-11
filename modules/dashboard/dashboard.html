@@ -1,11 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DaLimpeza - Bem vindo</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DaLimpeza - Início</title>
+  <link rel="stylesheet" href="dashboard.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script>
+  // bloqueia acesso sem login
+  if (!localStorage.getItem("usuarioLogado")) {
+    window.location.href = "login.html";
+  }
+
+  // logout
+  document.getElementById("logoutBtn").addEventListener("click", function (e) {
+    e.preventDefault();
+    localStorage.removeItem("usuarioLogado");
+    window.location.href = "login.html";
+  });
+</script>
 </head>
 <body>
-    
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">DaLimpeza</div>
+
+    <nav>
+      <a href="#">Clientes</a>
+      <a href="#">Fornecedores</a>
+      <a href="#">Produtos</a>
+      <a href="#" class="logout" id="logoutBtn">Sair</a>
+    </nav>
+  </header>
+
+  <!-- DASHBOARD -->
+  <main class="container">
+
+    <div class="window featured">
+      <h2>Resumo Geral</h2>
+      <p>Bem-vindo ao sistema DaLimpeza.</p>
+      <p>Aqui você acompanha suas principais informações.</p>
+    </div>
+
+    <div class="grid">
+      <div class="window">
+        <h3>Clientes</h3>
+        <p>Gerenciar cadastro de clientes.</p>
+      </div>
+
+      <div class="window">
+        <h3>Fornecedores</h3>
+        <p>Controle de fornecedores.</p>
+      </div>
+
+      <div class="window">
+        <h3>Produtos</h3>
+        <p>Lista e estoque de produtos.</p>
+      </div>
+
+      <div class="window">
+        <h3>Relatórios</h3>
+        <p>Visualizar relatórios do sistema.</p>
+      </div>
+    </div>
+
+  </main>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+</script>
+
 </body>
 </html>
