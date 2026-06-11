@@ -18,6 +18,7 @@
 .logo {
   font-size: 20px;
   font-weight: bold;
+  
 }
 
 .navbar nav a {
@@ -40,6 +41,7 @@
   padding: 30px;
   background: #f3f4f6;
   min-height: 100vh;
+  
 }
 
 /* JANELA EM DESTAQUE */
@@ -48,8 +50,13 @@
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  
 }
 
+.window a {
+    color: inherit;
+    text-decoration: none;
+}
 /* DESTAQUE */
 .featured {
   border-left: 6px solid #1e3a8a;
