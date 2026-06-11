@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
 }
 
 /* NAVBAR */
@@ -16,15 +15,18 @@
 }
 
 .logo {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
-  
+  margin-left: 60px;
+  padding: 2px;
 }
+
 
 .navbar nav a {
   color: white;
   text-decoration: none;
   margin-left: 20px;
+  margin-right: 40px;
   transition: 0.3s;
 }
 
